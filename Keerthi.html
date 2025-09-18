@@ -1,0 +1,13 @@
+import java.io.#;import java.util.*;class Extract
+public static void main(String argsl)int len;
+System.out.print("Enter String:");Scanner sc= new Scanner(System.in);String str= sc.nextLine0;
+len=str.lengthO;
+System.out.print("Enter Starting position and end position to extract characters: ");
+int start=sc.nextInt);int end=sc.nextIntO;start=start-1;
+int check=start+end;
+if(start<0ll start>len)
+System.out.println("INVALID POSITION");System.exit(1);
+if(check<0ll check>len)
+System.out.println("TRYING TO EXTRACT INVALID POSITION");System.exit(1);
+String substr=str.substring(start, end);
+System.out.println("\nEXTRACTED STRING IS "+substr);
